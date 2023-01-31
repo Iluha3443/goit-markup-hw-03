@@ -2,12 +2,18 @@ body {
   font-family: "Roboto";
   color: #434455;
 }
+
 .container {
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1128px;
-  outline: 2px solid teal;
+  width: 1138px;
 }
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 /* ЛОГО */
 .logo > span {
   font-family: "Raleway";
@@ -28,16 +34,20 @@ body {
   font-weight: 800;
   text-decoration: none;
 }
-/* Navigation */
-.lead {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 .site-nav {
   font-weight: 500;
   list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
+  display: flex;
+  margin-left: 76px;
+}
+.site-nav .nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+}
+.site-nav .nav-flex:not(:last-child) {
+  margin-right: 40px;
 }
 .nav {
   font-size: 16px;
@@ -45,6 +55,11 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 .nav:hover,
 .nav:focus {
@@ -60,6 +75,7 @@ body {
 }
 
 .address-list-item {
+  display: flex;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -68,6 +84,10 @@ body {
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: auto;
+}
+.address-list-item .nav-flex + .nav-flex {
+  margin-left: 40px;
 }
 
 .address-list:hover,
@@ -84,6 +104,7 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.1;
   color: #ffffff;
+  padding: 188px 473px 0 473px;
 }
 .thumbnail {
   text-align: center;
@@ -99,6 +120,10 @@ button {
 }
 .btn-tiny {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: top 96px;
+  margin-bottom: 72px;
 }
 .btn-large {
   font-weight: 500;
@@ -132,18 +157,17 @@ button {
   display: inline-block;
   min-width: 169px;
   text-align: center;
+  margin-top: 48px;
+  margin-bottom: 188px;
 }
 /* Секция1 */
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+
 .subject {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: #2e2f42;
-  margin-top: 0;
+  margin: top 120px;
   margin-bottom: 8px;
 }
 .item {
@@ -154,11 +178,15 @@ button {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 120px;
+  width: 264px;
+  margin-right: 24px;
 }
 .aside {
   list-style-type: none;
   letter-spacing: 0.02em;
+  display: flex;
 }
+
 /* Секция2 */
 .heading {
   font-weight: 700;
@@ -168,17 +196,22 @@ button {
   text-transform: capitalize;
   color: #2e2f42;
   letter-spacing: 0.02em;
-  margin: 0px 0px 72px 0px;
+  margin-bottom: 72px;
+  margin-top: 0;
 }
 
 .pic {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
 }
 /* Секция3 */
 .thumb {
   text-decoration: none;
+  border: 1px solid #e7e9fc;
 }
 
 .headline {
@@ -197,11 +230,14 @@ button {
   letter-spacing: 0.02em;
   list-style-type: none;
   color: #434455;
+  margin: 0;
+  margin-bottom: 80px;
 }
 .picture {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 120px;
+  display: flex;
 }
 /* Футер */
 .logo-desc {
@@ -216,7 +252,8 @@ button {
   color: #f4f4fd;
   background-color: #2e2f42;
   text-decoration: none;
-  margin-top: 0px;
+  display: inline-block;
+  margin-top: 100px;
   margin-bottom: 16px;
 }
 .logo-desc > span {
@@ -230,7 +267,7 @@ button {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  margin-top: 0px;
+  margin-top: 100px;
   margin-bottom: 16px;
 }
 .footer {
@@ -243,5 +280,15 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-top: 0px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+  width: 264px;
+}
+/* Portfolio */
+.item-list:nth-child(3n) {
+  margin-right: 0px;
+}
+.item-list {
+  width: 360px;
+  margin-bottom: 48px;
+  margin-right: 24px;
 }
