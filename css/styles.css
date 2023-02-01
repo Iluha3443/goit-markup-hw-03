@@ -8,9 +8,9 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1138px;
+  width: 1158px;
 }
-.header {
+.headert {
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -49,6 +49,7 @@ body {
 .site-nav .nav-flex:not(:last-child) {
   margin-right: 40px;
 }
+
 .nav {
   font-size: 16px;
   line-height: 1.5;
@@ -57,7 +58,7 @@ body {
   text-decoration: none;
 }
 
-.main-nav {
+.div-flex {
   display: flex;
   align-items: center;
 }
@@ -85,6 +86,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
+  /* margin-right: 40px; */
 }
 .address-list-item .nav-flex + .nav-flex {
   margin-left: 40px;
@@ -94,7 +96,9 @@ body {
 .address-list:focus {
   color: #404bbf;
 }
-
+.holder {
+  margin-left: auto;
+}
 /* Секция Герой */
 .title {
   margin-top: 0;
@@ -122,7 +126,7 @@ button {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  margin: top 96px;
+  margin-top: 96px;
   margin-bottom: 72px;
 }
 .btn-large {
@@ -167,7 +171,7 @@ button {
   font-size: 20px;
   line-height: 1.2;
   color: #2e2f42;
-  margin: top 120px;
+  padding-top: 120px;
   margin-bottom: 8px;
 }
 .item {
@@ -177,7 +181,7 @@ button {
   letter-spacing: 0.02em;
   list-style-type: none;
   margin-top: 0;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
   width: 264px;
   margin-right: 24px;
 }
@@ -203,10 +207,18 @@ button {
 .pic {
   list-style-type: none;
   margin-top: 0;
-  margin-bottom: 240px;
+  padding-bottom: 240px;
   display: flex;
   flex-wrap: wrap;
   margin-left: 0;
+  padding-left: 0;
+  /* margin-right: 24px; */
+}
+.image {
+  margin-right: 24px;
+}
+.image:last-child {
+  margin-right: 0px;
 }
 /* Секция3 */
 .thumb {
@@ -236,8 +248,9 @@ button {
 .picture {
   list-style-type: none;
   margin-top: 0;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
   display: flex;
+  /* margin-right: 24px; */
 }
 /* Футер */
 .logo-desc {
@@ -284,11 +297,12 @@ button {
   width: 264px;
 }
 /* Portfolio */
-.item-list:nth-child(3n) {
-  margin-right: 0px;
-}
+
 .item-list {
   width: 360px;
   margin-bottom: 48px;
   margin-right: 24px;
+}
+.item-list:nth-child(3n) {
+  margin-right: 0px;
 }
