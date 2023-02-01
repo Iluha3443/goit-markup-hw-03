@@ -213,6 +213,9 @@ button {
   margin-left: 0;
   padding-left: 0;
   /* margin-right: 24px; */
+  /* border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc; */
 }
 .image {
   margin-right: 24px;
@@ -223,7 +226,6 @@ button {
 /* Секция3 */
 .thumb {
   text-decoration: none;
-  border: 1px solid #e7e9fc;
 }
 
 .headline {
@@ -302,6 +304,9 @@ button {
   width: 360px;
   margin-bottom: 48px;
   margin-right: 24px;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
 .item-list:nth-child(3n) {
   margin-right: 0px;
